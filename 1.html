@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	function arrayReverse(arr){
+		for(let i=0;i<parseInt(arr.length/2);i++){
+			let n;
+			n=arr[i];
+			arr[i]=arr[arr.length-1-i];
+			arr[arr.length-1-i]=n;
+		}
+		console.log(arr);
+	}
+	
+	let arr1=[11,22,33,44,55,66,77,88];
+	let arr2=[5,2,8,7,4,7,9,4,3];
+	arrayReverse(arr1);
+	arrayReverse(arr2);
+</script>
